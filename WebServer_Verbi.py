@@ -1,6 +1,5 @@
 import requests
 
-
 def main():
 
     host = input("Inserisci url dell'host: ")
@@ -13,7 +12,6 @@ def main():
     else:
         print("Controlla la porta inserita!")
         return
-
 
     print(f"Verifico: {url}")
 
@@ -29,8 +27,6 @@ def main():
             print(f"Codice di stato: {risposta.status_code}")
     except requests.RequestException as e:
         print(f"Errore nella richiesta: {e}")
-
-
 
 if __name__ == "__main__":
     main()
